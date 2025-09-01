@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main              # change if your default branch isn't main
+  workflow_dispatch: {}   # allow manual runs
+
+permissions:
+  contents: write         # required to push to gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Verify built site exists
+        run: test -d _build/html || (echo "_build/html not found" && exit 1)
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _build/html

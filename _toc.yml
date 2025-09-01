@@ -1,0 +1,13 @@
+format: jb-book
+root: notebooks/00/intro
+chapters:
+  - file: notebooks/01/introduksjon
+  - file: notebooks/02/python_basics
+  - file: notebooks/03/funksjoner
+  - file: notebooks/04/lister_oppslag_numpy
+  - file: notebooks/05/pandas_og_databehandling
+  - file: notebooks/06/logikk_loops
+  - file: notebooks/07/matplotlib
+  - file: notebooks/08/seaborn
+  - file: notebooks/09/sympy
+  - file: notebooks/10/simulering
