@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -641,7 +641,7 @@ document.write(`
 <p>Det kan dere gjøre - ved å <em>kjøre</em> de tre neste kodeblokkene under her. Det kan dere enkelt gjøre ved å trykke <code class="docutils literal notranslate"><span class="pre">SHIFT</span></code> + <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> når dere har trykke på cellen!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="o">!{</span>sys.executable<span class="o">}</span><span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--upgrade
 <span class="o">%</span><span class="k">pip</span> install --upgrade pip
 <span class="o">%</span><span class="k">pip</span> install numpy
@@ -952,7 +952,7 @@ De 2 likhets tegnene (<code class="docutils literal notranslate"><span class="pr
 <h2>4. Lag en enkel funksjon ⚙️<a class="headerlink" href="#lag-en-enkel-funksjon" title="Link to this heading">#</a></h2>
 <p>I kapittel 3 Funksjoner så vil dere lære hvordan man definerer og bruker funksjoner i Python. Funksjoner er en måte å pakke inn kode på, slik at den kan gjenbrukes flere steder i programmet.</p>
 <p>Funksjoner gjør koden gjenbrukbar:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">hils</span><span class="p">(</span><span class="n">navn</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">hils</span><span class="p">(</span><span class="n">navn</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hei,&quot;</span><span class="p">,</span> <span class="n">navn</span><span class="p">,</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
 
     <span class="n">hils</span><span class="p">(</span><span class="s2">&quot;Anna&quot;</span><span class="p">)</span>
@@ -968,7 +968,7 @@ De 2 likhets tegnene (<code class="docutils literal notranslate"><span class="pr
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prøv selv</span>
 
 
-<span class="k">def</span><span class="w"> </span><span class="nf">tall_pluss_tall</span><span class="p">(</span><span class="n">tall1</span><span class="p">,</span> <span class="n">tall2</span><span class="p">):</span> <span class="c1">#Vi regner ut summen av to tall</span>
+<span class="k">def</span> <span class="nf">tall_pluss_tall</span><span class="p">(</span><span class="n">tall1</span><span class="p">,</span> <span class="n">tall2</span><span class="p">):</span> <span class="c1">#Vi regner ut summen av to tall</span>
     <span class="k">return</span> <span class="n">tall1</span> <span class="o">+</span> <span class="n">tall2</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">tall_pluss_tall</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -993,13 +993,13 @@ De 2 likhets tegnene (<code class="docutils literal notranslate"><span class="pr
 \]</div>
 <p>Den lille “i”en forteller oss person 1, person 2 og person 3.</p>
 <p>I kode kan vi da skrive dette som en funksjon</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">summen_av_hoyder</span><span class="p">(</span><span class="n">hoyder</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">summen_av_hoyder</span><span class="p">(</span><span class="n">hoyder</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">hoyder</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">summen_av_hoyder</span><span class="p">(</span><span class="n">person1</span><span class="p">,</span> <span class="n">person2</span><span class="p">,</span> <span class="n">person3</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">summen_av_hoyder</span><span class="p">(</span><span class="n">person1</span><span class="p">,</span> <span class="n">person2</span><span class="p">,</span> <span class="n">person3</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">person1</span> <span class="o">+</span> <span class="n">person2</span> <span class="o">+</span> <span class="n">person3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">summen_av_hoyder</span><span class="p">(</span><span class="mi">170</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">160</span><span class="p">))</span> <span class="c1">#Printer ut summen av høydene til 3 personer</span>
 </pre></div>
@@ -1013,7 +1013,7 @@ De 2 likhets tegnene (<code class="docutils literal notranslate"><span class="pr
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">hoyder_med_for_i</span><span class="p">(</span><span class="n">hoyder</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hoyder_med_for_i</span><span class="p">(</span><span class="n">hoyder</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#Dette er bare eksempel og vil først være relvant i senere kapittel </span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hoyder</span><span class="p">)):</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="n">hoyder</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
