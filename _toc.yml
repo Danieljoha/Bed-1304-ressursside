@@ -13,3 +13,4 @@ chapters:
   - file: notebooks/08/seaborn
   - file: notebooks/09/sympy
   - file: notebooks/10/simulering
+  - file: notebooks/00/knowledge_test
