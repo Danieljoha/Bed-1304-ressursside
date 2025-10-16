@@ -1,0 +1,135 @@
+---
+jupyter: python3
+---
+
+<span style="color:#9bb1d4;font-size:30px;font-weight:900"> Recap av første tre forelesninger i kurset</span>  
+
+# Til nå
+Til nå så har vi godt i gjennom følgende.
+
+### 1. **Nedlastning av Python, VSCode og `pip`.**
+### 2. **Python Basics**
+### 3. **Funksjoner**
+
+## **Forelesning 1**
+
+I første forelesning brukte vi tid på nedlastning, Visual Studio Code og `pip` (i seminarene).
+
+## Terminal
+
+```{python}
+# Vis bruken av terminal
+```
+
+## Copilot
+GitHub Copilot er en AI-modell som kan hjelpe oss med (nesten) all kode.
+
+Likevel, den kan gjøre feil, og på kronglete vis.
+Uansett, så er det et knallsterkt verktøy som er lurt å bruk i **læring av Python**.
+
+### Nedlastning
+* Dere må lage en bruker på GitHub - bruk **uit mailen** deres.
+
+* Dere kan få det integrert i VSCode, ved å følge instruksene [her](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro). Fordi her kan dere få pro versjonen, ved å sende bilde av StudentWeb, eller studentkortet.
+
+* Dere må også laste ned *GitHub Copilot* under Extensions (på venstre siden i VSCode).
+
+```{python}
+# Copilot eksempler
+```
+
+# **Forelesning 2**
+I forelesning 2 gikk vi gjennom **variabeltyper** og noen andre **grunnleggende konsepter** i Python.
+
+## Variabeltyper
+
+Python har flere grunnleggende datatyper:
+
+- **Bool** (`True` / `False`)
+- **Int** (heltall, f.eks. `42`)
+- **Float** (desimaltall, f.eks. `3.14`)
+- **Str** (tekst / string, f.eks. `"Hei verden"`)
+
+### Eksempler
+```python
+alder = 25          # int
+temperatur = 36.6   # float
+er_student = True   # bool
+navn = "Ola Nordmann" # str
+
+### **Andre grunnleggende konsepter**
+* **Kommentarer** starter med `#`.
+* **Variabeler** defineres med `=`.
+* **Print-funksjonen** bruker for å skrive ut verdier.
+
+```{python}
+print("Hei, verden!")
+print(alder)
+```
+
+```{python}
+sum = 5 + 3       # 8
+produkt = 4 * 2   # 8
+```
+
+# Bruk av `type()` i Python
+
+`type()` brukes for å finne **datatypen** til en variabel eller verdi.
+
+## Eksempler
+
+```python
+alder = 25
+temperatur = 36.6
+er_student = True
+navn = "Ola Nordmann"
+
+print(type(alder))        # <class 'int'>
+print(type(temperatur))   # <class 'float'>
+print(type(er_student))   # <class 'bool'>
+print(type(navn))         # <class 'str'>
+
+```{python}
+print(type(42))           # <class 'int'>
+print(type("hei"))        # <class 'str'>
+print(type(3.14))         # <class 'float'>
+```
+
+# **Forelesning 3 - Funksjoner**
+
+En **funksjon** i Python er en gjenbrukbar kodeblokk som utfører en bestemt oppgave.  
+Funksjoner gjør programmet mer oversiktlig, reduserer gjentakelse av kode, og gjør det enklere å feilsøke og videreutvikle.
+
+## Hvorfor bruke funksjoner?
+- **Gjenbruk:** Du kan kalle samme funksjon mange ganger uten å skrive koden på nytt.  
+- **Modularitet:** Koden blir mer strukturert og delt opp i logiske enheter.  
+- **Fleksibilitet:** Du kan sende inn ulike verdier (argumenter) til funksjonen, og den returnerer et resultat.  
+
+## Parametere og argumenter
+- **Parameter**: En "plassholder" i funksjonsdefinisjonen (f.eks. `pris`, `antall`).
+- **Argument**: Den faktiske verdien du sender inn når du kaller funksjonen (f.eks. `pris=200`, `antall=5`).
+
+Eksempel:
+```python
+def total_inntekt(pris, antall):
+    """
+    Beregner total inntekt gitt pris per enhet og antall solgte enheter.
+    """
+    inntekt = pris * antall
+    return inntekt
+
+# Bruk av funksjonen (argumenter sendes inn)
+print(total_inntekt(200, 5))   # gir 1000
+print(total_inntekt(150, 12))  # gir 1800
+
+```{python}
+# Skriv en funksjon kvadrat(x) som returnerer kvadratet av tallet x.
+```
+
+```{python}
+# Skriv en funksjon som tar inn lønn, og skattesats, og returnerer lønn etter skatt.
+```
+
+# **Oppgaver**
+
+
